@@ -39,13 +39,11 @@ FROM
 
 --============ Query - 4 =================--
 
---==== Using a join on 2 tables, select all columns and all =====--
---==== rows from the tables without the use of a Cartesian product =====--
+--==== Using a join on 2 tables, select all columns and all rows from the tables without the use of a Cartesian product =====--
 
 --================= Scenario ================--
 
---==== Writing a query to get all the patient details with their =====--
---==== appointment details whose appointment status is 'Confirmed' =====--
+--==== Writing a query to get all the patient details with their appointment details whose appointment status is 'Confirmed' =====--
 
 SELECT 
 	a.appointment_no, 
@@ -86,8 +84,7 @@ ORDER BY No_Of_Doctors_Visit Desc;
 
 --============ Query - 6 =================--
 
---==== Using a join on 3 tables, select 5 columns from the 3 =====---
---==== tables. Use syntax that would limit the output to 10 rows =====--
+--==== Using a join on 3 tables, select 5 columns from the 3 tables. Use syntax that would limit the output to 10 rows =====--
 
 --============ Scenario =============--
 
@@ -128,8 +125,7 @@ JOIN
 	
 --============ Query - 8 =================--
 
---==== Use GROUP BY and HAVING in a select statement ====--
---==== using one or more tables ====--
+--==== Use GROUP BY and HAVING in a select statement using one or more tables ====--
 
 --================= Scenario ================--
 
@@ -181,10 +177,8 @@ FROM
 
 --============ Query - 11 =================--
 
---==== Delete one record from one table. Use select ====--
---==== statements to demonstrate the table contents before and after ====--
---==== the DELETE statement. Make sure you use ROLLBACK ====--
---==== afterwards so that the data will not be physically removed ====--
+--==== Delete one record from one table. Use select statements to demonstrate the table contents before and after the DELETE statement. 
+-- Make sure you use ROLLBACK afterward so that the data will not be physically removed ====--
 
 -- before DELETE
 SELECT * FROM Invoice;
@@ -208,10 +202,8 @@ ROLLBACK;
 
 --============ Query - 12 =================--
 
---==== Update one record from one table. Use select ====--
---==== statements to demonstrate the table contents before and after ====--
---==== the UPDATE statement. Make sure you use ROLLBACK ====--
---==== afterwards so that the data will not be physically removed ====--
+--==== Update one record from one table. Use select statements to demonstrate the table contents before and after ====--
+--==== the UPDATE statement. Make sure you use ROLLBACK afterwards so that the data will not be physically removed ====--
 
 --  before UPDATE
 SELECT * FROM Insurance;
@@ -239,8 +231,7 @@ ROLLBACK;
 
 --================= Scenario ================--
 
---==== Writing Query find doctors who have had the highest number of appointments ===--
---==== scheduled in a single day ====--
+--==== Writing Query find doctors who have had the highest number of appointments scheduled in a single day ====--
 
 SELECT
     a.Doctor_ID,
@@ -273,8 +264,7 @@ HAVING
 
 --================= Scenario ================--
 
---==== Writing Query to find the doctors with the highest average ====-- 
---==== invoice amount for patients who have insurance.====--
+--==== Writing Query to find the doctors with the highest average invoice amount for patients who have insurance.====--
 
 SELECT
     d.Doctor_ID,
