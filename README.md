@@ -133,3 +133,6 @@ The "Insurance" entity is designed to store information about insurance provider
 **Cardinality:** 0:1 between INSURANCE and INVOICE  
 **Business rule:** Each INVOICE may be linked to one INSURANCE, but an INSURANCE is linked to an INVOICE.  
 
+## Entity and Relationship Diagram:  
+
+<img width="469" alt="image" src="https://github.com/krishnaapurva/HealthCare-Management-System/assets/41700695/8dd74861-eaaa-4d63-a4c9-c5e26dd4efba">
