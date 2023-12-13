@@ -47,7 +47,7 @@ An advanced database solution carefully designed to enhance hospital operations.
 Collectively, these attributes provide essential information about each patient, helping healthcare providers manage patient records, track their medical history, and communicate with them effectively.  
 
 **Entity Name: PATIENT_RECORD**  
-**Entity Description:** The "PATIENT_Record" entity represents individual patients' medical records and history within a healthcare system or facility. It contains information about various aspects of a patient's healthcare journey.
+**Entity Description:** The "PATIENT_Record" entity represents individual patients' medical records and history within a healthcare system or facility. It contains information about various aspects of a patient's healthcare journey.  
 **Main Attributes of the Patient_Record Entity:**
 1. **Record_ID:** This unique identifier for each patient record allows easy tracking and referencing of specific medical records.   
 2. **Date:** When the patient's medical record was created or updated. It helps in tracking the chronological history of a patient's healthcare interactions.  
@@ -105,31 +105,31 @@ The "Invoice" entity serves the crucial function of billing patients for healthc
 The "Insurance" entity is designed to store information about insurance providers, making it useful for healthcare facilities to manage insurance policies and coordinate with insurance companies regarding patient coverage, claims, and billing. This information can be used to ensure that patients receive the benefits they are entitled to under their insurance policies.
 
 ## Relationship and Cardinality:
-Relationship: takes between INSURANCE and PATIENT 
-Cardinality: 0:1 between INSURANCE and PATIENT 
-Business rule: A PATIENT may have zero or one INSURANCE, but INSURANCE is taken for a PATIENT.
+**Relationship:** takes between INSURANCE and PATIENT  
+**Cardinality:** 0:1 between INSURANCE and PATIENT  
+**Business rule:** A PATIENT may have zero or one INSURANCE, but INSURANCE is taken for a PATIENT. 
 
-Relationship: books between PATIENT and APPOINTMENT 
-Cardinality: 1:M between PATIENT and APPOINTMENT 
-Business rule: Each PATIENT can have many APPOINTMENTS, but an APPOINTMENT is linked to a PATIENT.
+**Relationship:** books between PATIENT and APPOINTMENT  
+**Cardinality:** 1:M between PATIENT and APPOINTMENT  
+**Business rule:** Each PATIENT can have many APPOINTMENTS, but an APPOINTMENT is linked to a PATIENT.  
 
-Relationship: scheduled between DOCTOR an APPOINTMENT
-Cardinality: 1:M between DOCTOR an APPOINTMENT
-Business rule: Each APPOINTMENT is scheduled with one DOCTOR, and a DOCTOR can be scheduled for many APPOINTMENTs.
+**Relationship:** scheduled between DOCTOR an APPOINTMENT  
+**Cardinality:** 1:M between DOCTOR an APPOINTMENT  
+**Business rule:** Each APPOINTMENT is scheduled with one DOCTOR, and a DOCTOR can be scheduled for many APPOINTMENTs.  
  
-Relationship: has between PATIENT and PATIENT RECORD 
-Cardinality: 1:M between PATIENT and PATIENT RECORD 
-Business rule: Every PATIENT can have one or more than one PATIENT RECORD, and a PATIENT_RECORD is associated with a PATIENT.
+**Relationship:** has between PATIENT and PATIENT RECORD  
+**Cardinality:** 1:M between PATIENT and PATIENT RECORD  
+**Business rule:** Every PATIENT can have one or more than one PATIENT RECORD, and a PATIENT_RECORD is associated with a PATIENT.  
 
-Relationship: has between DOCTOR and PATIENT RECORD 
-Cardinality: 1:M between DOCTOR and PATIENT RECORD 
-Business rule: Every PATIENT_RECORD has a DOCTOR, and a DOCTOR is associated with one or many PATIENT_RECORD.
+**Relationship:** has between DOCTOR and PATIENT RECORD  
+**Cardinality:** 1:M between DOCTOR and PATIENT RECORD  
+**Business rule:** Every PATIENT_RECORD has a DOCTOR, and a DOCTOR is associated with one or many PATIENT_RECORD.  
  
-Relationship: billed between PATIENT and INVOICE 
-Cardinality: 1:M between PATIENT and INVOICE 
-Business rule: A PATIENT can be billed for one or many INVOICEs, and each INVOICE is associated with a PATIENT.
+**Relationship:** billed between PATIENT and INVOICE  
+**Cardinality:** 1:M between PATIENT and INVOICE   
+**Business rule:** A PATIENT can be billed for one or many INVOICEs, and each INVOICE is associated with a PATIENT.  
  
-Relationship: has between INSURANCE and INVOICE 
-Cardinality: 0:1 between INSURANCE and INVOICE
-Business rule: Each INVOICE may be linked to one INSURANCE, but an INSURANCE is linked to an INVOICE.
+**Relationship:** has between INSURANCE and INVOICE   
+**Cardinality:** 0:1 between INSURANCE and INVOICE  
+**Business rule:** Each INVOICE may be linked to one INSURANCE, but an INSURANCE is linked to an INVOICE.  
 
