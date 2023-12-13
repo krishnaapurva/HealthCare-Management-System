@@ -135,4 +135,4 @@ The "Insurance" entity is designed to store information about insurance provider
 
 ## Entity and Relationship Diagram:  
 
-<img width="469" alt="image" src="https://github.com/krishnaapurva/HealthCare-Management-System/assets/41700695/8dd74861-eaaa-4d63-a4c9-c5e26dd4efba">
+<img width="776" alt="image" src="https://github.com/krishnaapurva/HealthCare-Management-System/assets/41700695/249a79cf-6386-4cd3-a460-587ad634aa50">
